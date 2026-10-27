@@ -1,0 +1,50 @@
+#local provider plugins created by terraform init
+**/.terraform/*
+
+#state files
+*.tfstate
+*tfstate.*
+
+#crash log files
+crash.log
+crash.*.log
+
+**/.terraform/*
+
+*.tfstate
+
+#variable files containing sensitive data
+*.tfvars
+*.tfvars.json
+
+#saved plans can contain sensitive data, so we should ignore them
+*.tfplan
+
+tfplan
+
+#local override files, which are usually used to override resources locally and so are not checked in
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+#CLI configuration files
+.terraformrc
+terraform.rc
+
+#environment variable files
+
+.env
+.env.*
+!.env.example
+
+# SSH keys and credentials
+*.pem
+*.key
+
+#OS and editor files
+
+.DS_Store
+Thumbs.db
+.vscode/
+*.swp
